@@ -19,7 +19,7 @@
 # SOFTWARE.
 
 
-setwd('D:/Daniel/corona_modelle') # output folder for plots
+setwd('D:/Daniel/DanielsSim/site/covid_models') # output folder for plots
 library('ggplot2')
 library(tidyquant) # adds geom_ma plot option for moving averages
 library('cowplot')
