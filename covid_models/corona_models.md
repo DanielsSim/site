@@ -20,14 +20,12 @@ _(Starting April 2021, I’m also plotting people vaccinated / people fully vacc
 
 Each plot shows three different curves:
 
-<span style="color:red"><b>Red curve: official test numbers</b></span><br>
+* <span style="color:red"><b>Red curve: official test numbers</b></span><br>
 This is what we see in most dashboards and what get’s mentioned in public discourse: positive cases from covid-19 testing for each country (I’m using the ourworldindata.org dataset which itself currently uses John Hopkins as source for test and death numbers). For the daily new cases, I’m using a smoothed curve to avoid the daily fluctuations between weekend and workday numbers (new_cases_smoothed in the ourworldindata dataset).
 Rule of thumb: if more than 1% of all tests are positive (see plot on the upper right), you should not take the official numbers at face value as we’ll miss a large share of all infections! So how can we estimate the actual numbers? That’s where the models come into play:
-
-<b>Black curve: infections estimated from deaths and an assumed infection fatality rate (model 1)</b><br>
+* <b>Black curve: infections estimated from deaths and an assumed infection fatality rate (model 1)</b><br>
 We can estimate infections = deaths / infection_fatality_rate by using a reasonable estimate for the fatality rate (see bottom of the post for details). Update: from spring 2021 on, vaccination rates are rising and this makes model 1 outdated. So please keep this in mind when interpreting plots.
-
-<span style="color:grey"><b>Grey Curve: Scale cases with a test-dependent ratio (model 2)</b></span><br>
+* <span style="color:grey"><b>Grey Curve: Scale cases with a test-dependent ratio (model 2)</b></span><br>
 The less we test, the more infections we’re missing. So we can also estimate infections by scaling the cases with our best estimate of what the number of undetected vs. detected cases should be (aka “Dunkelziffer” or dark figure).
 
 Going back to the plot’s for Germany and United States, I’d like to highlight a few important findings:
