@@ -1,8 +1,10 @@
 # COVID-19 infection estimates
 
+*Originally posted at https://hmbd.wordpress.com/2020/12/30/covid-19-infection-estimates/ but I'm slowly moving the site here for getting fully automated updates and also getting rid of wordpress. Moving everything else might still take a few weeks..months.*
+
 After spending months looking at various coronavirus dashboard, I decided to code my own plots. Starting point for all this are the [Corona plots by David Kriesel](http://dkriesel.com/en/corona) and [the dashboards and datasets provided by our world in data](https://ourworldindata.org/coronavirus). Both are excellent and I don’t try to replace them. For Germany, please also see the [reports and dashboard for the COVID-19 Simulator](https://covid-simulator.com/en/).
 
-Instead, I’m interested in estimating actual infection counts: we test only a small part of each country and depending on how much we test, we miss a large share of all infections. This is important for many questions, like comparing countries, estimating cases when testing changes and so on. So I implemented two models for estimating actual infection numbers. Both have limitations, but when the results match, I’m reasonably confident that we’re seeing the right picture. Plots will be updated at least once per week - current data state is: ![](_version_date.png)
+Instead, I’m interested in estimating actual infection counts: we test only a small part of each country and depending on how much we test, we miss a large share of all infections. This is important for many questions, like comparing countries, estimating cases when testing changes and so on. So I implemented two models for estimating actual infection numbers. Both have limitations, but when the results match, I’m reasonably confident that we’re seeing the right picture. Plots will be updated at least once per week - current data state is: ![](aa_version_date.png)
 
 _Please note that this is a statistics- and data-driven picture. I’m running a lot of numbers because it helps me become less confused, but if you’ve lost someone in events related to the pandemic or are directly affected in other ways (e.g. economically), this is probably not helpful._
 
@@ -102,7 +104,7 @@ Now, let’s get a little bit into details.
 
 Wikipedia[ lists some estimates for the infection fatality rate](https://en.wikipedia.org/wiki/Coronavirus_disease_2019#Infection_fatality_rate), roughly estimated at ~0.5 .. 1%. If you’re confused, theres a really good explainer on the infection fatality rate [by our world in data](https://ourworldindata.org/mortality-risk-covid#what-we-want-to-know-isn-t-the-case-fatality-rate-it-s-the-infection-fatality-rate). Here, I’ll pick a reasonably-looking infection fatality rate of 0.8% in spring and 0.4% from summer 2020 on (to account for treatment options getting better over time). I shift the results by two weeks to account for infection – death delay and that’s it, we get a crude ballpark estimate of possible infection counts.
 
-![](_model1_IFR_function.png)
+![](aa_model1_IFR_function.png)
 
 A short criticism of model 1:
 
@@ -121,7 +123,7 @@ To be specific: Model 2’s best guess is infections = cases * (1 + 300 * positi
 
 _Update March 24th: With script version 1.5, I’ve modified the compensation formula. It used to give too high rates of undetected infections at high rates of positive tests, now it’s more conservative. This should mosty affect the range >15% positive tests._
 
-![](_model2_ratio_function.png)
+![](aa_model2_ratio_function.png)
 
 Again, this is a rather crude estimate and I account for it by including a grey “range of uncertainty” (not just here, also in the country plots). These curves lead to the following effects:
 
