@@ -13,7 +13,7 @@ I’ll first show my plots for Germany and the United States, then describe how 
 ![Germany](Germany.png)
 ![United States](United States.png)
 
-_Note in Nov. 2021: The USA data usually has increase of test positive rate for the last few days (which then gets corrected in the following week or so) – so pls be aware that model 1 will be skewed towards higher infection rate at the end of the data._
+_Note in Nov. 2021: The USA data usually has increase of test positive rate for the last few days (which then gets corrected in the following week or so) – so pls be aware that model 2 will be skewed towards higher infection rate at the end of the data._
 
 OK, so let’s do a short description of the plots: The left side shows accumulated numbers over time (read as: how many people have had covid-19), the middle plot daily new infections (read as: how many people have been infected on each specific day). The right-side plots are just for information, so we’ll briefly discuss them later. My main point is that left and middle plots display the same data, you can pick either one depending on what interests you.
 _(Starting April 2021, I’m also plotting people vaccinated / people fully vaccinated in the left plot; note that this data is currently not available for China and I’m not including vaccination rates in the middle plot as I think these are not that relevant)_
