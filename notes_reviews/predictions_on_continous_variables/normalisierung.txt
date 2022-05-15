@@ -1,0 +1,6 @@
+Lösungen für Finden des Spielraums
+- Skalieren / normieren auf "Echter Wert = 1"
+- Normieren auf "durchschnittliche Vorhersage der Gruppe"
+- Normieren auf "durchschnittliche Vorhersage der Gruppe" + zusätzliche Unsicherheit (weil: meist sind Menschen übertrieben sicher / overkonfident)
+- Verteilen von X Punkten pro Frage
+- Festlegen eines Spielraums beim Formulieren der Vorhersagefrage
