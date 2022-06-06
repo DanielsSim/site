@@ -6,7 +6,7 @@ I spent some time reading up on economics and figured I might as well just write
 2. I mostly buy into a pro-market view here. If you are very much against capitalism per se, this post will probably not be worth your time. Sorry. 
 3. Also, this is for getting me up to speed on standard economic theory. If you've already studied economics, nothing in here will be new to you, but I'd really like to hear your feedback.
 
-## Part 1: ideal markets
+## Part 1: Ideal Markets
 
 Coordination problems are tough problems. See [the SSC book review of Red Plenty"](https://slatestarcodex.com/2014/09/24/book-review-red-plenty/):    
 
@@ -71,7 +71,7 @@ Here, the information the market gives us is primarily "what's the current local
 
 To sum up part 1: markets are very good at allocating goods, given that a structure somewhat close to an ideal market is possible. In that case, efficient allocation occurs and the market follows a "law of one price" where stuff is priced identical +- transportation costs. As a secondary effect, the price carries information, which, depending on the market's nature, may even be the primary point.
 
-## Part 2: imperfect markets
+## Part 2: Imperfect Markets
 
 One could generalize the example above (and [standard neoclassical economic theory](https://en.wikipedia.org/wiki/Neoclassical_economics) that goes along with it) to something like "markets are always better at, you know, stuff that markets do". So… um… let's briefly read up on [market failure](https://en.wikipedia.org/wiki/Market_failure):
 
@@ -107,9 +107,7 @@ To illustrate, I'll use the example at the end of [this econ talk episode](https
 
 So TCE is not like a natural law that tells you what solution _has_ to emerge, but gives a robust framework for understanding reality nontheless. It allows you to think on how the structure may change if transaction costs changes. Typically, TCE gets applied to company structures (e.g., the automotive supply chain discussions we discussed above), but [this primer to the topic in German](http://schneider-dietram.de/wp-content/uploads/2017/11/Transaktionskostentheorie-1.pdf) closes by discussing how relationships have evolved in recent decades: By better birth control, transaction costs for sexual exchange have been lowered and thus the typical exchange structure is shifting from very hierarchical structures (marriage, closely tied-together families) to more market-like structures (dating, polyamory, ...). I don't think we should take this example very serious, but it's a fun one nonetheless.
 
-Summary for part two: When you move 
-
-## Part 3: applied market mechanisms
+## Part 3: Applied Market Mechanisms
 
 Since my personal target for reading up on all of this was to get better intuitions on how markets should behave, let's close here by discussing a few examples. This serves as a playground for me to lay out my own thinking and I'm very open to corrections and comments. Even less than the rest of this post, this here is not "things I'm already certain of" but for laying out my understanding.
 
@@ -154,7 +152,7 @@ Moral of the story: Standard economic models usually assume an auction mechanism
 
 ### D) Do we need more markets for education?
 
-Which school or unversity to attend is a tough decision, as it will dramatically affect your kids / your future path, but there's no way to say in advance which way those paths will go. As a state's education ministry (or as a taxpayer), you really want your citizens to get an as good education as possible, as this will have all kinds of nice outcomes (better competitiveness, higher economic growth, ...). 
+Which school or unversity to attend is a tough decision, as it will dramatically affect your kids / your future path but there's no way to say in advance which way those paths will go. As a state's education ministry (or as a taxpayer), you really want your citizens to get an as good education as possible (as this gives your country better competitiveness, higher economic growth, ...). 
 
 Can't we like wave a magic wand and transform all of education into an automatic market mechanism for allocating decent lessons? For existing school systems, many countries have chosen a highly hierarchical, not very market-based approach to education. This makes lots of sense based on transaction cost economics (in the above categories, schooling has high frequency as students visit school/university each day; high specifity as dedicated houses are needed and especially high uncertainty as quality and individual requirements are notoriously difficult to accurately assess).
 
