@@ -2,26 +2,28 @@
   
 I spent some time reading up on economics and figured I might as well just write a summary. Quick warnings:
 
-1. Reading time: 30 minutes for the post, 5h+ if you follow all links. I highly recommend following the links. At least pick a few interesting ones. I've organized the post into three parts, so if you're reading something you already know, feel free to jump to the next part.
+1. Reading time: 30 minutes for the post, 5h+ if you follow all links. I highly recommend following the links. At least pick a few interesting ones. 
 2. I mostly buy into a pro-market view here. If you are very much against capitalism per se, this post will probably not be worth your time. Sorry. 
 3. Also, this is for getting me up to speed on standard economic theory. If you've already studied economics, nothing in here will be new to you, but I'd really like to hear your feedback.
 
 ## Part 1: Ideal Markets
 
+(We're starting with the very basics. If you already know this stuff, consider jumping directly to part 2 or 3)
+
 Coordination problems are tough problems. See [the SSC book review of Red Plenty"](https://slatestarcodex.com/2014/09/24/book-review-red-plenty/):    
 
 > Red Plenty presented the problem with the Soviet economy primarily as one of allocation. You could have a perfectly good factory that could be producing lots of useful things if only you had one extra eensy-weensy part, but unless the higher-ups had allocated you that part, you were out of luck. If that part happened to break, getting a new one would depend on how much clout you (and your superiors) pulled versus how much clout other people who wanted parts (and their superiors) held.  
   
-One solution discussed in Red Plenty is Kantorovic's approach to mathematical optimization. Unfortunately, this does not work on practical levels of a national economy, if only for the amount of computation power available (see [Cosma Shalizi's notes](http://bactra.org/weblog/918.htm) for a detailed explanation).
+One solution discussed in Red Plenty is Kantorovic's approach to mathematical optimization. Unfortunately, this does not work on practical levels of a national economy, if only for the amount of computation power available (see [Cosma Shalizi's discussion](http://bactra.org/weblog/918.htm) for details).
   
-So we want to have ...goods or whatever else... allocated in an economy at a reasonable rate and a global gods-eye approach to distribution is practically impossible. This appears to be one of the cases for a market-based allocation of goods. I understand that this is an area of large controversy, but also I don't understand the positions from various sides. So let's ignore the culture war potential here for a minute and try to bring various perspectives together.  
+So we want to have ...goods or whatever else... allocated in an economy at a reasonable rate and a global gods-eye approach to distribution is practically impossible. This appears to be one of the cases for a market-based allocation of goods. 
 
 The standard model on markets is the supply and demand model, sometimes called competitive markets model. I found [this investopedia article a good introduction](https://www.investopedia.com/articles/economics/11/intro-supply-demand.asp). (also see [chapter 3 of Hutchinson: Principles of Microeconomics, 2016)](https://pressbooks.bccampus.ca/uvicecon103/chapter/introduction-to-supply-and-demand/). The core idea is:
 
 * supply side: when price increases, more of a good will become available (as more obscure / expensive sources will also be willing to provide it)
 * demand side: the cheaper something is, the more people will be interested in buying it.
 
-So think of something like fish. If a trout is guaranteed to sell for 20 bucks, lots of people will start producing, even if it's a pain to farm them in your garden pool. This means we get a curve like this:
+So think of something like fish. If a trout is guaranteed to sell for 20 bucks, lots of people will start producing, even if it's a pain to farm them in their garden pool. This means we get a curve like this:
 
 ![](markets_theory/supply.png)
 
@@ -31,7 +33,7 @@ On the other hand, not everyone is keen to eat trout. But if it gets really chea
 
 … and we expect the market to solve for the crossing point. This view is always a snapshot of the current state: if either supply or demand changes, the equilibrium point will also change:
 
-![if we stopped feeding trout to animals (cause... ethics or a new regulation?)](markets_theory/supply_demand2.png "if we stopped feeding trout to animals (cause... ethics or a new regulation?)")
+![](markets_theory/supply_demand2.png)
 
 (Often, those curves are drawn as straight lines, but there's no reason they have to be. I chose MS-paint style nonlinear curves for the examples above for aesthetic reasons.)
 
@@ -44,7 +46,7 @@ Lets discuss application and limits on a practical example. To begin with, the i
 3. free entry and exit of the market
 4. perfect information
 
-Theres a nice paper by [Robert Jenssen: "the digital provide: information (thechnology), market performance, and welfare in the south indian fisheries sector" (2007)](https://web.stanford.edu/class/comm1a/readings/jensen-digital-divide.pdf) that will allow me to elaborate on this. I encourange you to read the first five pages, but I'll quote the core segment's here:
+Theres a nice paper by [Robert Jenssen: "the digital provide: information (thechnology), market performance, and welfare in the south indian fisheries sector" (2007)](https://web.stanford.edu/class/comm1a/readings/jensen-digital-divide.pdf) that I'll use here for illustration. I encourange you to read the first five pages, but I'll quote the core segment's here:
 
 > Fishing is an important industry in Kerala. For consumers, fish is a dietary staple; over 70 percent of adults eat fish at least once a day, making it the largest source of many important nutrients, such as protein. (...) However, a significant limitation to fish marketing is that while at sea, fishermen are unable to observe prices at any of the numerous markets spread out along the coast. Further, fishermen can typically visit only one market per day because of high transportation costs and the limited duration of the market. As a result, fishermen sell their catch almost exclusively in their local market. In addition, there is almost no storage (due to costs), and little arbitrage on land due to poor road quality and high transportation costs; ultimately, the quantity supplied to a particular market is determined almost entirely by the amount of fish caught near that market.
 
@@ -56,6 +58,7 @@ Over the course of a few years, mobile phones become gradually available in seve
 
 ![](markets_theory/jenssen_p21.png)
 
+They summarize:
 
 > Using microlevel survey data spanning this period, we find that price dispersion was dramatically reduced with the introduction of mobile phones; the mean coefficient of variation of price across markets (...) declined from 60 –70 to 15 percent or less. In addition, there were also almost no violations of the Law of One Price once mobile phones were in place, compared to 50 – 60 percent of market pairs before. Further, waste, averaging 5– 8 percent of daily catch before mobile phones, was  completely  eliminated. Overall, the fisheries sector was transformed from a collection of essentially autarkic fishing markets to a state of nearly perfect spatial arbitrage.
 
@@ -69,7 +72,7 @@ One could object to the market efficiency here that the price still has small de
 
 Here, the information the market gives us is primarily "what's the current local price for fish", but there are other cases where the market carries really interesting information on top - like treating stock market prices as an assesment of a company's health (albeit an imperfect one, you'll have to normalize with a reasonable reference). In cases like [prediction markets](https://en.wikipedia.org/wiki/Prediction_market), markets get created with the specific goal of making information available.
 
-To sum up part 1: markets are very good at allocating goods, given that a structure somewhat close to an ideal market is possible. In that case, efficient allocation occurs and the market follows a "law of one price" where stuff is priced identical +- transportation costs. As a secondary effect, the price carries information, which, depending on the market's nature, may even be the primary point.
+To sum up part 1: markets are very good at allocating goods, given that a structure somewhat close to an ideal market is possible. In that case, efficient allocation occurs and the market follows a "law of one price" where stuff is priced identical +/- transportation costs. As a secondary effect, the price carries information, which, depending on the market's nature, may even be the primary point.
 
 ## Part 2: Imperfect Markets
 
@@ -101,11 +104,11 @@ Other sources provide very nice diagrams for what market forms will work for wha
 
 Hierarchies are things like vertical integration (e.g., Tesla producing both electric vehicles and running charging stations, which makes a lot of sense from TCE perspective - think high frequency and high specificity). Hybrids are somewhere in the middle, like joint ventures or other forms of very close cooperation between companies. Generally, a pure market mechanism excels in cases of low transaction costs (this brings us back to the "market allocation is unbeatable by any other mechanism" concept from neoclassical theory). If it's very expensive to find trade partners, to negotiate and to enforce trades (all flavors of high transaction costs), pure markets are typically not very good and other mechanisms will work better.
 
-To illustrate, I'll use the example at the end of [this econ talk episode](https://www.econtalk.org/boudreaux-on-coase/) with Coase's 1974 paper "The Lighthouse in Economics". The issue with lighthouses is that they are a kind of public good: boats need them to safely find the harbor, but there's no way a lighthouse can set up a market by excluding boats from the service or that competing lighthouses might efficiently compete with their services at the same harbor. So by definition, we have high specifity and high frequency; so we should be somewhere on the right side of the graph above with some kind of pretty hierarchical solution emerging. Coase went out and studied examples of historical arrangements for lighthouse operation:
+To illustrate, I'll use the example from [this econ talk episode](https://www.econtalk.org/boudreaux-on-coase/) with Coase's 1974 paper "The Lighthouse in Economics". The issue with lighthouses is that they are a kind of public good: boats need them to safely find the harbor, but there's no way a lighthouse can set up a market by excluding boats from the service or that several lighthouses might efficiently compete with their services at the same harbor. So by definition, we have high specifity and high frequency; so we should be somewhere on the right side of the graph above with some kind of pretty hierarchical solution emerging. Coase went out and studied examples of historical arrangements for lighthouse operation:
 
 > The contractual arrangements that harbor-builders and dock- or harbor-owners (...) would arrange with boats coming in were ingeniously designed to enable lighthouses to collect fees, allow the suppliers of lighthouse services to collect fees for the provision of those services. The naive view that a lighthouse is a straightforward public good, unless it's provided outright by government and funded exclusively through taxation--and lighthouses early on in Great Britain were _not_ funded in this way. (...) They were funded in large part by fees that boat owners did pay. And this is an example of Coase saying, well, let's look at the history. And the history of lighthouses is far more complex than the notion you get by reading the standard textbook story about a lighthouse.
 
-So TCE is not like a natural law that tells you what solution _has_ to emerge, but gives a robust framework for understanding reality nontheless. It allows you to think on how the structure may change if transaction costs changes. Typically, TCE gets applied to company structures (e.g., the automotive supply chain discussions we discussed above), but [this primer to the topic in German](http://schneider-dietram.de/wp-content/uploads/2017/11/Transaktionskostentheorie-1.pdf) closes by discussing how relationships have evolved in recent decades: By better birth control, transaction costs for sexual exchange have been lowered and thus the typical exchange structure is shifting from very hierarchical structures (marriage, closely tied-together families) to more market-like structures (dating, polyamory, ...). I don't think we should take this example very serious, but it's a fun one nonetheless.
+So TCE is not like a natural law that tells you what solution _has_ to emerge, but gives a robust framework for understanding reality nonetheless. It allows you to think on how the structure may change if transaction costs changes. Typically, TCE gets applied to company structures (e.g., the automotive supply chain discussions we discussed above), but [this primer to the topic in German](http://schneider-dietram.de/wp-content/uploads/2017/11/Transaktionskostentheorie-1.pdf) closes by discussing how relationships have evolved in recent decades: By better birth control, transaction costs for sexual exchange have been lowered and thus the typical exchange structure is shifting from very hierarchical structures (marriage, closely tied-together families) to more market-like structures (dating, polyamory, ...). I don't think we should take this example very serious, but it's a fun one nonetheless.
 
 ## Part 3: Applied Market Mechanisms
 
@@ -113,9 +116,11 @@ Since my personal target for reading up on all of this was to get better intuiti
 
 ### A) If markets are so great, why can't we use them to end world hunger?
 
-Standard economic theory and the _law of one price_ layed out above should mostly work for tradeable goods like wheat, corn and rice, as they are great examples for goods where all the limitations I discussed above do not apply. So rice should be roughly the same base price +/- local taxes and transportation costs everywhere in the world. This sounds to me like a good reason for why [unconditional cash transfers work](https://www.givewell.org/charities/give-directly) - you can just send people cash and if they need to buy food, the market will supply. This will work as long as regions are sufficiently connected to the global market; so if high transportation costs or taxes remain in the way, this reasoning may not fully apply (but sending cash might help nonetheless).
+Standard economic theory and the _law of one price_ from the ideal markets part should mostly work for tradeable goods like wheat, corn and rice, as they are great examples for goods where all the limitations I discussed above do not apply. So rice should be roughly the same base price +/- local taxes and transportation costs everywhere in the world. This sounds to me like a good reason for why [unconditional cash transfers work](https://www.givewell.org/charities/give-directly) - you can just send people cash and if they need to buy food, the market will supply. This will work as long as regions are sufficiently connected to the global market; so if high transportation costs or taxes remain in the way, this reasoning may not fully apply (but sending cash might help nonetheless).
 
-Unfortunately, the thing about the price carrying information also applies here. I can directly modify the Hayek quote from part 1 to: "in a case like that of a scarcity of one _food_ (...) tens of _millions_ of people whose identity could not be ascertained by months of investigation, are made to use the material or its products more sparingly". If you're not living off 1$ per day, food getting more expensive is just an annoyance, but for people already using all their money to feed themselves, this is lifethreatening and price surges as seen currenty for wheat and rice will lead to a global famine. (note to future readers: this was written in 2022 and we're 3 months into the russian invasion into ukraine, with food prices already rising and projections of global food shortages on the table).
+Unfortunately, the thing about the price carrying information also applies here. I can directly modify the Hayek quote from part 1 to: "in a case like that of a scarcity of one _food_ (...) tens of _millions_ of people whose identity could not be ascertained by months of investigation, are made to use the material or its products more sparingly". If you're not living off 1$ per day, food getting more expensive is just an annoyance, but for people already using all their money to feed themselves, this is lifethreatening and price surges as seen currenty for wheat and rice will lead to a global famine. 
+
+(Note to future readers: this was written in 2022 and we're 3 months into the russian invasion into ukraine, with food prices already rising and projections of global food shortages on the table).
 
 My understanding is that a global market also means that foods will automatically be distributed in attractive directions. Just making sure everyone has enough money to at least buy base commodities would be really great and would be a good reason to donate to the right charities. If you're a state actor, putting aditional taxes on wasteful uses for food might further help, as we should then expect the market to adjust towards those in need.
 
@@ -142,7 +147,7 @@ You can read up on the followup studies [on Wikipedia](https://en.wikipedia.org/
 
 ### C) Price negotiations via auctions
 
-A friend of mine works in a car company. A few years ago, they needed a relatively complex component for a series of new engines. The new engines wouldn't work without that component, but it was twice as expensive as the previous technology and only a very limited number of companies were potential suppliers. In the end, they had two suppliers as potential candidates, but didn't want to give the full volume to one of them (splitting the deal and having an alternative if one company has quality or supply chain issues sounded like a good deal). So how do you split the price and volume?
+A friend of mine works in a car company. A few years ago, they needed a relatively complex component for a series of new engines. The new engines required it to work, but it was twice as expensive as the previous technology and only a very limited number of companies were potential suppliers. In the end, they had two suppliers as potential candidates, but didn't want to give the full volume to one of them (splitting the total volume and having an alternative if one company has quality or supply chain issues sounded like a good deal). So how do you split the price and volume?
 
 They ended up doing a bidding tournament: They had both companies on site in separate meeting rooms and presented each one a list of offered prices for different engine variants. If they were willing to provide the volume for engine A at, say 52$ per piece, but not the volumes for engines B, C and D (each at other prices due to technical differences), they would get that volume. The rest of the volumes would then be offered to the second supplier at slightly increased prices (who was very well aware that parts of the total volume were already taken); the variants the second company didn't choose again got their prices raised and were offered back to the first supplier.
 
@@ -161,7 +166,7 @@ One of the interesting aspects I only noticed recently is that one can interpret
 * rankings and standardized tests attempt to make school and student performance comparable
 * the credit system implemented in bachelor / master studies attempts to make switching universities easier.
 
-I'm not really sure how much this works; maybe if we didn't have these, we'd be much worse. Still we are in a situation where it makes a lot of sense to pick a top-tier university instead of directly picking online courses or finding a well-fit local college mostly for uncertainty and prestige reasons. There have been a few attempts lately to change this, but I don't feel qualified to assess how well those work.
+I'm not really sure how much this works; maybe if we didn't have these, we'd be much worse. Still we are in a situation where it makes a lot of sense to pick a top-tier university instead of attending free online courses even for uncertainty and prestige reasons. There have been a few attempts lately to change this, but I don't feel qualified to assess how well those work.
 
 I don't really have a good summary here; maybe there isn't one - which would explain all this controversity about how to build a good education system.
 
@@ -171,7 +176,7 @@ So suppose you want to design a market for some unsolved problem that's been bug
 
 Probably a good question is how close to an ideal market you can get. Can buyers and sellers enter and exit without high costs? Is information sufficiently available? Or can you make it available, for example by introducing a product rating system? (if you're into video games: consider how Steam has user ratings for each game, but the Nintendo eshop hasn't. Steam gives me really good recommendations on what I may like. Does this matter?). 
 
-Other than these questions, I'd be reluctant to provide definite answers. My takeaway from digging into market mechanisms is both a rich framework on how to think about them and a general feeling of humble shyness about applying them to get strong predictions. Mostly, economics appears to work by explaining what is and not so much predicting what will be. So good additional questions are: Was this tried before and did it work? Did someone at least [implement it in Eve Online](https://www.gamedeveloper.com/design/how-i-used-eve-online-to-predict-the-great-recession)? How different is this to your setting?
+Other than these questions, I'd be reluctant to provide definite answers. My takeaway from digging into market mechanisms is both a rich framework on how to think about them and a humble shyness on applying them to get strong predictions. Mostly, economics appears to work by explaining what is and not so much predicting what will be. So good additional questions are: Was this tried before and did it work? Did someone at least [implement it in Eve Online](https://www.gamedeveloper.com/design/how-i-used-eve-online-to-predict-the-great-recession)? How different is the tried-and-tested variant to your setting?
 
 **A few closing remarks: **
 
