@@ -14,7 +14,7 @@ Coordination problems are tough problems. See [the SSC book review of Red Plenty
 
 > Red Plenty presented the problem with the Soviet economy primarily as one of allocation. You could have a perfectly good factory that could be producing lots of useful things if only you had one extra eensy-weensy part, but unless the higher-ups had allocated you that part, you were out of luck. If that part happened to break, getting a new one would depend on how much clout you (and your superiors) pulled versus how much clout other people who wanted parts (and their superiors) held.  
   
-One solution discussed in Red Plenty is Kantorovic's approach to mathematical optimization. Unfortunately, this does not work on practical levels of a national economy, if only for the amount of computation power available (see [Cosma Shalizi's discussion](http://bactra.org/weblog/918.htm) for details).
+One solution discussed in Red Plenty is Kantorovic's approach to mathematical optimization. Unfortunately, this does not work on practical levels of a national economy, if only for the amount of computation power available (see [Cosma Shalizi's discussion](https://crookedtimber.org/2012/05/30/in-soviet-union-optimization-problem-solves-you/) for details).
   
 So we want to have ...goods or whatever else... allocated in an economy at a reasonable rate and a global gods-eye approach to distribution is practically impossible. This appears to be one of the cases for a market-based allocation of goods. 
 
