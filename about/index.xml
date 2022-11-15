@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on A DIY approach to simulation, the universe and everything else</title>
-    <link>/about/</link>
+    <link>https://danielssim.github.io/site/about/</link>
     <description>Recent content in About on A DIY approach to simulation, the universe and everything else</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 May 2022 21:34:18 +0200</lastBuildDate><atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 May 2022 21:34:18 +0200</lastBuildDate><atom:link href="https://danielssim.github.io/site/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

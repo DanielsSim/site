@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on A DIY approach to simulation, the universe and everything else</title>
-    <link>/tags/</link>
+    <link>https://danielssim.github.io/site/tags/</link>
     <description>Recent content in Tags on A DIY approach to simulation, the universe and everything else</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Sep 2022 08:00:00 +0200</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Sep 2022 08:00:00 +0200</lastBuildDate><atom:link href="https://danielssim.github.io/site/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>economics</title>
-      <link>/tags/economics/</link>
+      <link>https://danielssim.github.io/site/tags/economics/</link>
       <pubDate>Mon, 26 Sep 2022 08:00:00 +0200</pubDate>
       
-      <guid>/tags/economics/</guid>
+      <guid>https://danielssim.github.io/site/tags/economics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>effective altruism</title>
-      <link>/tags/effective-altruism/</link>
+      <link>https://danielssim.github.io/site/tags/effective-altruism/</link>
       <pubDate>Mon, 26 Sep 2022 08:00:00 +0200</pubDate>
       
-      <guid>/tags/effective-altruism/</guid>
+      <guid>https://danielssim.github.io/site/tags/effective-altruism/</guid>
       <description></description>
     </item>
     
     <item>
       <title>long_read</title>
-      <link>/tags/long_read/</link>
+      <link>https://danielssim.github.io/site/tags/long_read/</link>
       <pubDate>Mon, 26 Sep 2022 08:00:00 +0200</pubDate>
       
-      <guid>/tags/long_read/</guid>
+      <guid>https://danielssim.github.io/site/tags/long_read/</guid>
       <description></description>
     </item>
     
     <item>
       <title>philosophy</title>
-      <link>/tags/philosophy/</link>
+      <link>https://danielssim.github.io/site/tags/philosophy/</link>
       <pubDate>Sat, 05 Jun 2021 21:38:34 +0200</pubDate>
       
-      <guid>/tags/philosophy/</guid>
+      <guid>https://danielssim.github.io/site/tags/philosophy/</guid>
       <description></description>
     </item>
     

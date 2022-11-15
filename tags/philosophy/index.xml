@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>philosophy on A DIY approach to simulation, the universe and everything else</title>
-    <link>/tags/philosophy/</link>
+    <link>https://danielssim.github.io/site/tags/philosophy/</link>
     <description>Recent content in philosophy on A DIY approach to simulation, the universe and everything else</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Jun 2021 21:38:34 +0200</lastBuildDate><atom:link href="/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Jun 2021 21:38:34 +0200</lastBuildDate><atom:link href="https://danielssim.github.io/site/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Review: An Essay on Man (Ernst Cassirer, 1944)</title>
-      <link>/notes_reviews/review_cassirer_essay_on_man/</link>
+      <link>https://danielssim.github.io/site/notes_reviews/review_cassirer_essay_on_man/</link>
       <pubDate>Sat, 05 Jun 2021 21:38:34 +0200</pubDate>
       
-      <guid>/notes_reviews/review_cassirer_essay_on_man/</guid>
+      <guid>https://danielssim.github.io/site/notes_reviews/review_cassirer_essay_on_man/</guid>
       <description>attention conservation notice: ~5400 words split over parts prologue, part 1, part 1.5, part 2 and summary
 This is a review I wrote for the SlateStarCodex / AstralCodexTen book review contest. For whatever reason, it never arrived in the pile of contestants, so I’m posting it here instead. This is OK for me: I mostly wrote this for myself and really did enjoy the process. Nonetheless, I’d like others to read it and get some feedback on it (if you want to, use the comment function here).</description>
     </item>

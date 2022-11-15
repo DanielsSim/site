@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>effective altruism on A DIY approach to simulation, the universe and everything else</title>
-    <link>/tags/effective-altruism/</link>
+    <link>https://danielssim.github.io/site/tags/effective-altruism/</link>
     <description>Recent content in effective altruism on A DIY approach to simulation, the universe and everything else</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Sep 2022 08:00:00 +0200</lastBuildDate><atom:link href="/tags/effective-altruism/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Sep 2022 08:00:00 +0200</lastBuildDate><atom:link href="https://danielssim.github.io/site/tags/effective-altruism/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Decarbonize</title>
-      <link>/notes_reviews/decarbonization_strategy/</link>
+      <link>https://danielssim.github.io/site/notes_reviews/decarbonization_strategy/</link>
       <pubDate>Mon, 26 Sep 2022 08:00:00 +0200</pubDate>
       
-      <guid>/notes_reviews/decarbonization_strategy/</guid>
+      <guid>https://danielssim.github.io/site/notes_reviews/decarbonization_strategy/</guid>
       <description>Work in progress. People wanted to read a draft state, so here you go.
 I spent two months looking into the general strategy of country-wide decarbonization. My example here is Germany but I do all calculations on a per-person level, so converting this to any other country should be only a small effort. My core target here is to build a baseline mental model of the current state and future development of energy supply and CO2 reduction on a country-wide level.</description>
     </item>
