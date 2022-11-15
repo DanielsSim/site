@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>economics on A DIY approach to simulation, the universe and everything else</title>
+    <link>/tags/economics/</link>
+    <description>Recent content in economics on A DIY approach to simulation, the universe and everything else</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Sep 2022 08:00:00 +0200</lastBuildDate><atom:link href="/tags/economics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Decarbonize</title>
+      <link>/notes_reviews/decarbonization_strategy/</link>
+      <pubDate>Mon, 26 Sep 2022 08:00:00 +0200</pubDate>
+      
+      <guid>/notes_reviews/decarbonization_strategy/</guid>
+      <description>Work in progress. People wanted to read a draft state, so here you go.
+I spent two months looking into the general strategy of country-wide decarbonization. My example here is Germany but I do all calculations on a per-person level, so converting this to any other country should be only a small effort. My core target here is to build a baseline mental model of the current state and future development of energy supply and CO2 reduction on a country-wide level.</description>
+    </item>
+    
+    <item>
+      <title>If you&#39;re (in) a large organization, why are you so inefficient?</title>
+      <link>/notes_reviews/org_efficiency/</link>
+      <pubDate>Sat, 06 Aug 2022 08:00:00 +0200</pubDate>
+      
+      <guid>/notes_reviews/org_efficiency/</guid>
+      <description>If you&amp;rsquo;re (in) a large organization, why are you so inefficient? (Crosspost: Reddit, includes comments + discussion. Reading length: maybe 5..10 minutes. Sorry for the messy structure: my thinking is not organized, so my writeup shouldn&amp;rsquo;t be either.)
+I&amp;rsquo;ve been thinking about this a lot lately. After discussing this with several people I trust, I find the answers I have come up with still lacking and I&amp;rsquo;d appreciate feedback and pointers to things I&amp;rsquo;m missing.</description>
+    </item>
+    
+    <item>
+      <title>What markets can and cannot do</title>
+      <link>/notes_reviews/market_mechanisms/</link>
+      <pubDate>Sun, 29 May 2022 21:37:47 +0200</pubDate>
+      
+      <guid>/notes_reviews/market_mechanisms/</guid>
+      <description>What markets can and cannot do I spent some time reading up on economics and figured I might as well just write a summary. Quick warnings:
+ Reading time: 30 minutes for the post, 5h+ if you follow all links. I highly recommend following the links. At least pick a few interesting ones. I mostly buy into a pro-market view here. If you are very much against capitalism per se, this post will probably not be worth your time.</description>
+    </item>
+    
+  </channel>
+</rss>
