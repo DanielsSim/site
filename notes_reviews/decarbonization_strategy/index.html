@@ -34,9 +34,9 @@
 <main>
 <p><em>Work in progress. People wanted to read a draft state, so here you go.</em></p>
 <p>I spent two months looking into the general strategy of country-wide decarbonization. My example here is Germany but I do all calculations on a per-person level, so converting this to any other country should be only a small effort. My core target here is to build a baseline mental model of the current state and future development of energy supply and CO2 reduction on a country-wide level. Be warned that &ldquo;baseline model&rdquo; is way less than a detailed expert model: the model serves as a robust rough guide to the state of the world, but there are a lot of small details missing.</p>
-<h1 id="part-1-base-concepts-i-need-to-introduce-before-we-get-to-the-actual-discussion">Part 1: Base concepts i need to introduce before we get to the actual discussion</h1>
+<h1 id="part-1-base-problems-to-consider">Part 1: Base Problems To Consider</h1>
 <p>Don&rsquo;t have enough problems yet? Here you go.</p>
-<p>I recommend skimming these sections first and only reading the details if you have enough time. If this feels like a drag to read, consider to jump ahead to part 2 and come back for these later.</p>
+<p>I recommend skimming these sections first and only reading the details if you have enough time. If this feels like a drag to read, consider to jump ahead to part 2 and come back for these later. Really, I&rsquo;m sorry for so much text before we get to the actual model, but I need to introduce them before that.</p>
 <h2 id="a-a-problem-of-scales">A) A problem of scales</h2>
 <p>We often fail to appreciate the scales we&rsquo;re dealing with. Things are only practically feasible if they are available on the right scale. Base numbers (rounded very generously, from <a href="https://ourworldindata.org/energy/country/germany">Germany: Energy Country Profile - Our World in Data</a> and <a href="https://www.cleanenergywire.org/factsheets/germanys-energy-consumption-and-power-mix-charts">Germany’s energy consumption and power mix in charts | Clean Energy Wire</a>):</p>
 <ul>
@@ -80,18 +80,14 @@
 <h2 id="fiddely-fluctuations">Fiddely Fluctuations</h2>
 <p><a href="https://www.smard.de/en">https://www.smard.de/en</a> has data on hourly energy production. When writing this together I first made lots of screenshots, but then kicked them out for brevity (I encourage you to look at the dataset on your own). Things that really stood out for me:</p>
 <ol>
-<li>
-<p>Renewables now make up a significant part of Germany&rsquo;s electricity production, close to 50%. But they fluctuate wildly! Much of this gets compensated by in- and decreasing coal-powered electricity, but we&rsquo;ve definitely hit a limit of this and in high-supply cases (= more renewables get produced than there&rsquo;s energy demand). Honestly I&rsquo;m surprised our grid can tolerate that much fluctuation, with wind power being mostly in the north.
-<img src="/../../decarb/fluctuation_all.png" alt="">
-<img src="../../decarb/fluctuation_legend.png" alt="">
+<li>Renewables now make up a significant part of Germany&rsquo;s electricity production, close to 50%. But they fluctuate wildly! Much of this gets compensated by in- and decreasing coal-powered electricity, but we&rsquo;ve definitely hit a limit of this and in high-supply cases (= more renewables get produced than there&rsquo;s energy demand). Honestly I&rsquo;m surprised our grid can tolerate that much fluctuation, with wind power being mostly in the north.</li>
+</ol>
+<p><img src="fluctuation_all.png" alt="">
+<img src="fluctuation_legend.png" alt="">
 (a few days from October 2022 in the <a href="https://www.smard.de/en/marktdaten?marketDataAttributes=%7B%22resolution%22:%22hour%22,%22from%22:1665808917927,%22to%22:1666759317926,%22moduleIds%22:%5B1004066,1001226,1001225,1004067,1004068,1001228,1001224,1001223,1004069,1004071,1004070,1001227,5000410%5D,%22selectedCategory%22:null,%22activeChart%22:true,%22style%22:%22color%22,%22categoriesModuleOrder%22:%7B%7D,%22region%22:%22DE%22%7D">SMARD data viewer</a>. The red curve is total demand, so I&rsquo;m not sure what&rsquo;s up with the difference - maybe import/export of electricity?)</p>
-</li>
-<li>
-<p>Basically, we&rsquo;ve reached a level of renewables where higher shares are only possible by either accepting unused excess power in high-supply situations or adding significantly more storage to the grid. Maybe both. This matches other sources I&rsquo;ve seen claiming that at wind/solar above 30..40% of total electricity generated, you need buffering.</p>
-</li>
-<li>
-<p>Following a rough &ldquo;factor 2 of fluctuation per day&rdquo;-model, we&rsquo;d need capacity to buffer something like 1 day of electricity in storage (to compensate for 2 bad days in a row). That would be something like 6 MWh per year / 365 days = 16 kWh per person. Thats… wow, that&rsquo;s just huge. I don&rsquo;t see a way adding that much storage to the grid at battery prices of 500€ per kWh, that&rsquo;s like an order of magnitude too high (rough estimate: if you pay 50€ per kWh and year and use that 100 times per year, that&rsquo;s still 50 Ct/kWh of stored energy).</p>
-</li>
+<ol start="2">
+<li>Basically, we&rsquo;ve reached a level of renewables where higher shares are only possible by either accepting unused excess power in high-supply situations or adding significantly more storage to the grid. Maybe both. This matches other sources I&rsquo;ve seen claiming that at wind/solar above 30..40% of total electricity generated, you need buffering.</li>
+<li>Following a rough &ldquo;factor 2 of fluctuation per day&rdquo;-model, we&rsquo;d need capacity to buffer something like 1 day of electricity in storage (to compensate for 2 bad days in a row). That would be something like 6 MWh per year / 365 days = 16 kWh per person. Thats… wow, that&rsquo;s just huge. I don&rsquo;t see a way adding that much storage to the grid at battery prices of 500€ per kWh, that&rsquo;s like an order of magnitude too high (rough estimate: if you pay 50€ per kWh and year and use that 100 times per year, that&rsquo;s still 50 Ct/kWh of stored energy).</li>
 </ol>
 <h2 id="energy-storage">Energy storage</h2>
 <p>(not sure if this needs an extra section or not)</p>
