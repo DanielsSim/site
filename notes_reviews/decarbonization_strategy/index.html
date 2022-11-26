@@ -34,11 +34,11 @@
 <main>
 <p><em>Work in progress. People wanted to read a draft state, so here you go.</em></p>
 <p>I spent two months looking into the general strategy of country-wide decarbonization. My example here is Germany but I do all calculations on a per-person level, so converting this to any other country should be only a small effort. My core target here is to build a baseline mental model of the current state and future development of energy supply and CO2 reduction on a country-wide level. Be warned that &ldquo;baseline model&rdquo; is way less than a detailed expert model: the model serves as a robust rough guide to the state of the world, but there are a lot of small details missing.</p>
-<h1 id="part-1-base-problems-to-consider">Part 1: Base Problems To Consider</h1>
+<h1 id="part-1-base-problems-to-keep-in-mind">Part 1: Base Problems To Keep in Mind</h1>
 <p>Don&rsquo;t have enough problems yet? Here you go.</p>
 <p>I recommend skimming these sections first and only reading the details if you have enough time. If this feels like a drag to read, consider to jump ahead to part 2 and come back for these later. Really, I&rsquo;m sorry for so much text before we get to the actual model, but I need to introduce them before that.</p>
 <h2 id="a-a-problem-of-scales">A) A problem of scales</h2>
-<p>We often fail to appreciate the scales we&rsquo;re dealing with. Things are only practically feasible if they are available on the right scale. Base numbers (rounded very generously, from <a href="https://ourworldindata.org/energy/country/germany">Germany: Energy Country Profile - Our World in Data</a> and <a href="https://www.cleanenergywire.org/factsheets/germanys-energy-consumption-and-power-mix-charts">Germany’s energy consumption and power mix in charts | Clean Energy Wire</a>):</p>
+<p>We often fail to appreciate the scales we&rsquo;re dealing with. But things are only practically feasible if they are available on the right scale. Base numbers (rounded very generously, from <a href="https://ourworldindata.org/energy/country/germany">Germany: Energy Country Profile - Our World in Data</a> and <a href="https://www.cleanenergywire.org/factsheets/germanys-energy-consumption-and-power-mix-charts">Germany’s energy consumption and power mix in charts | Clean Energy Wire</a>):</p>
 <ul>
 <li>An average person consumes ~1.500 kWh of electricity per year (compare this to the number on your electricity bill to see how you&rsquo;re doing)</li>
 <li>Germany as a whole consumes ~500 TWh of electricity per year, or ~6.000 kWh per person and year (~84M inhabitants). Only 25% is private consumption, another ~30% &ldquo;trade and services&rdquo; and ~40% industry.</li>
@@ -63,7 +63,7 @@
 </ul>
 <h2 id="c-a-problem-of-externalities">C) A problem of externalities</h2>
 <p>There&rsquo;s a simple rule of thumb that we can usually expect secondary effects to be small, like maybe 10% of the main direct effect of something we observe. That&rsquo;s not zero, but in first approximation we may ignore the secondary effect of something and still get the order of magnitude of something right.</p>
-<p>Usually is not always. Especially not with energy production - here the base rule of thumb is that secondary effects may be stronger than primary ones. Let&rsquo;s go through a few common options and think about unintended consequences:</p>
+<p>But &ldquo;usually&rdquo; is not always. Especially not with energy production - here the base rule of thumb is that secondary effects may be stronger than primary ones. Let&rsquo;s go through a few common options and think about unintended consequences:</p>
 <ul>
 <li>Coal: baseline price ~<a href="https://en.wikipedia.org/wiki/Economics_of_nuclear_power_plants#/media/File:3-Learning-curves-for-electricity-prices.png">10 ct/kWh electricity</a>; emits lots of CO2 (~<a href="https://ourworldindata.org/explorers/impacts-of-energy-sources">1 T CO2 per MWh</a>, equals 10ct/kWh at a CO2 price of 100€/T). Deaths from cancer caused by should add ~25 ct/kWh (based on 10M€ per life and <a href="https://ourworldindata.org/safest-sources-of-energy">25 deaths per TWh</a>).</li>
 <li>Oil is almost identical to coal except for baseline costs and handling (easier to work with on a small scale, like cars and house heating; not so great for steel production)</li>
@@ -87,12 +87,120 @@
 (a few days from October 2022 in the <a href="https://www.smard.de/en/marktdaten?marketDataAttributes=%7B%22resolution%22:%22hour%22,%22from%22:1665808917927,%22to%22:1666759317926,%22moduleIds%22:%5B1004066,1001226,1001225,1004067,1004068,1001228,1001224,1001223,1004069,1004071,1004070,1001227,5000410%5D,%22selectedCategory%22:null,%22activeChart%22:true,%22style%22:%22color%22,%22categoriesModuleOrder%22:%7B%7D,%22region%22:%22DE%22%7D">SMARD data viewer</a>. The red curve is total demand, so I&rsquo;m not sure what&rsquo;s up with the difference - maybe import/export of electricity?)</p>
 <ol start="2">
 <li>Basically, we&rsquo;ve reached a level of renewables where higher shares are only possible by either accepting unused excess power in high-supply situations or adding significantly more storage to the grid. Maybe both. This matches other sources I&rsquo;ve seen claiming that at wind/solar above 30..40% of total electricity generated, you need buffering.</li>
-<li>Following a rough &ldquo;factor 2 of fluctuation per day&rdquo;-model, we&rsquo;d need capacity to buffer something like 1 day of electricity in storage (to compensate for 2 bad days in a row). That would be something like 6 MWh per year / 365 days = 16 kWh per person. Thats… wow, that&rsquo;s just huge. I don&rsquo;t see a way adding that much storage to the grid at battery prices of 500€ per kWh, that&rsquo;s like an order of magnitude too high (rough estimate: if you pay 50€ per kWh and year and use that 100 times per year, that&rsquo;s still 50 Ct/kWh of stored energy).</li>
+<li>Following a rough &ldquo;factor 2 of fluctuation per day&rdquo;-model, we&rsquo;d need capacity to buffer something like 1 day of electricity in storage (to compensate for 2 bad days in a row). That would be something like 6 MWh per year / 365 days = 16 kWh per person. Thats… wow, that&rsquo;s just huge. I don&rsquo;t see a way adding that much storage to the grid at battery prices of 500€ per kWh, that&rsquo;s like an order of magnitude too high (rough estimate: if you pay 50€ per kWh and year and use that 100 times per year, that&rsquo;s still 50 Ct/kWh of stored energy). I&rsquo;m not saying we won&rsquo;t need storage, just that storage in the size of &ldquo;buffer energy for 2 days of low wind+sunshine&rdquo; is very unlikely to be available in the next ~10 years.</li>
 </ol>
-<h2 id="energy-storage">Energy storage</h2>
-<p>(not sure if this needs an extra section or not)</p>
 <h2 id="renewables-rampup">Renewables rampup</h2>
-<p>Assuming sufficient buffering is available, we&rsquo;d need another ~5 MWh * 84M people = 420 TWh of renewable generation to hit close to 100% renewable electricity generation. Maybe more like 10MWh per person if we shift all kinds of stuff to electricity. We plan to add something like 15 TWh of wind and 20 TWh of solar per year from 2025 on, so we&rsquo;ll reach the &ldquo;close to 100%&quot;-point some time after 2030, probably more like 2040.</p>
+<p>OK, so forget the storage, what if we just ramp up renewables? At some point there should be enough to cover everything, right?</p>
+<p>Rough estimate: Assuming sufficient buffering is available, we&rsquo;d need another ~5 MWh * 84M people = 420 TWh of renewable generation to hit close to 100% renewable electricity generation. Maybe more like 10MWh per person if we shift all kinds of stuff to electricity. We plan to add something like 15 TWh of wind and 20 TWh of solar per year from 2025 on, so we&rsquo;ll reach the &ldquo;close to 100%&quot;-point some time after 2030, probably more like 2040.</p>
+<p>Can we do better than this? I built a simple spreadsheet-based model of energy supply and demand by taking a base number and splitting it over the year by defining a summer and winter share and a fluctuation share to distinguish between good and bad days. (Again, all numbers on a per-capita base)</p>
+<p><img src="simple_model_solar_supply.png" alt="simple_model_solar_supply.png"></p>
+<p>I can do the same with wind (same capacity, but better yield at 2 kwh/W/year + summer/winter shares reversed) and with &ldquo;others&rdquo; (mostly biomass, so no fluctuation) ab a constant 50 W. All numbers are made up and only loosely grounded in reality. For 2020 and against 6 MWh/year base consumption, the model predicts an average share of 37% renewable electricity but fluctuation between 62% on good summer days and 18% on bad winter days, so at least we&rsquo;re not totally off.</p>
+<p>So long story short, rough numbers for 2020 would be something like</p>
+<table>
+<thead>
+<tr>
+<th>year</th>
+<th>demand</th>
+<th>capacity solar</th>
+<th>capacity wind</th>
+<th>share renewables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020</td>
+<td>6 MWh</td>
+<td>500 W</td>
+<td>500 W</td>
+<td>37 %</td>
+</tr>
+<tr>
+<td>This is a very much condensed view, but I don&rsquo;t trust the model too much anyways. In any case, we can now make wild guesses about future developments. Looking at intended increases in solar and wind capacity, I&rsquo;d expect something like 250 W solar and 150 W wind to be added for each year after 2026. Assuming a constant demand of 6 MWh, good days would be 100% renewable in 2030 and average days would be 100% renewable in 2040:</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>year</th>
+<th>demand</th>
+<th>capacity solar</th>
+<th>capacity wind</th>
+<th>share renewables</th>
+<th>excess renewables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020</td>
+<td>6 MWh</td>
+<td>500 W</td>
+<td>500 W</td>
+<td>37 %</td>
+<td>0 MWh</td>
+</tr>
+<tr>
+<td>2030</td>
+<td>6 MWh</td>
+<td>2000 W</td>
+<td>1000 W</td>
+<td>72 %</td>
+<td>0.4 MWh</td>
+</tr>
+<tr>
+<td>2040</td>
+<td>6 MWh</td>
+<td>4500 W</td>
+<td>2500 W</td>
+<td>96 %</td>
+<td>2.9 MWh</td>
+</tr>
+</tbody>
+</table>
+<p>Of course demand will not remain at 6 MWh as we&rsquo;re shifting more stuff towards electricity. Let&rsquo;s make a wild guess here and assume demand will double until 2040, then we&rsquo;d have to cope with 12 MWh per person and year.</p>
+<table>
+<thead>
+<tr>
+<th>year</th>
+<th>demand</th>
+<th>capacity solar</th>
+<th>capacity wind</th>
+<th>share renewables</th>
+<th>excess renewables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020</td>
+<td>6 MWh</td>
+<td>500 W</td>
+<td>500 W</td>
+<td>37 %</td>
+<td>0 MWh</td>
+</tr>
+<tr>
+<td>2030</td>
+<td>9 MWh</td>
+<td>2000 W</td>
+<td>1000 W</td>
+<td>56 %</td>
+<td>0.05 MWh</td>
+</tr>
+<tr>
+<td>2040</td>
+<td>12 MWh</td>
+<td>4500 W</td>
+<td>2500 W</td>
+<td>76 %</td>
+<td>1.2 MWh</td>
+</tr>
+</tbody>
+</table>
+<p>Of course, none of this is serious, but I&rsquo;m still impressed by how much power we could add. Up to a total of ~70% renewables, the model expects this to work without that much excess energy (renewable energy that ends up unused), 80% renewables are still reasonably reachable but everything above that really pushes you to a lot of energy wasted to get the last few percents together.</p>
 
 </main>
 
