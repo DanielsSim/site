@@ -90,12 +90,12 @@
 <li>Following a rough &ldquo;factor 2 of fluctuation per day&rdquo;-model, we&rsquo;d need capacity to buffer something like 1 day of electricity in storage (to compensate for 2 bad days in a row). That would be something like 6 MWh per year / 365 days = 16 kWh per person. Thats… wow, that&rsquo;s just huge. I don&rsquo;t see a way adding that much storage to the grid at battery prices of 500€ per kWh, that&rsquo;s like an order of magnitude too high (rough estimate: if you pay 50€ per kWh and year and use that 100 times per year, that&rsquo;s still 50 Ct/kWh of stored energy). I&rsquo;m not saying we won&rsquo;t need storage, just that storage in the size of &ldquo;buffer energy for 2 days of low wind+sunshine&rdquo; is very unlikely to be available in the next ~10 years.</li>
 </ol>
 <h2 id="renewables-rampup">Renewables rampup</h2>
-<p>OK, so forget the storage, what if we just ramp up renewables? At some point there should be enough to cover everything, right?</p>
+<p>OK, so forget the storage, what if we just ramp up renewables? Let&rsquo;s just build enough solar and wind and accept that they usually produce more energy than we need!</p>
 <p>Rough estimate: Assuming sufficient buffering is available, we&rsquo;d need another ~5 MWh * 84M people = 420 TWh of renewable generation to hit close to 100% renewable electricity generation. Maybe more like 10MWh per person if we shift all kinds of stuff to electricity. We plan to add something like 15 TWh of wind and 20 TWh of solar per year from 2025 on, so we&rsquo;ll reach the &ldquo;close to 100%&quot;-point some time after 2030, probably more like 2040.</p>
-<p>Can we do better than this? I built a simple spreadsheet-based model of energy supply and demand by taking a base number and splitting it over the year by defining a summer and winter share and a fluctuation share to distinguish between good and bad days. (Again, all numbers on a per-capita base)</p>
+<p>Can we do better than this rough estimate? Let&rsquo;s see: I built a simple spreadsheet-based model of energy supply and demand by taking the average over the year and splitting it over the year by defining a summer and winter share and a fluctuation share to distinguish between good and bad days. (Again, all numbers on a per-capita base)</p>
 <p><img src="simple_model_solar_supply.png" alt="simple_model_solar_supply.png"></p>
-<p>I can do the same with wind (same capacity, but better yield at 2 kwh/W/year + summer/winter shares reversed) and with &ldquo;others&rdquo; (mostly biomass, so no fluctuation) ab a constant 50 W. All numbers are made up and only loosely grounded in reality. For 2020 and against 6 MWh/year base consumption, the model predicts an average share of 37% renewable electricity but fluctuation between 62% on good summer days and 18% on bad winter days, so at least we&rsquo;re not totally off.</p>
-<p>So long story short, rough numbers for 2020 would be something like</p>
+<p>I can do the same with wind (same capacity, but better yield at 2 kwh/W/year + summer/winter shares reversed) and with &ldquo;others&rdquo; (mostly biomass, so no fluctuation) ab a constant 50 W. All numbers are made up and only loosely grounded in reality. For 2020 and against 6 MWh/year base consumption, the model predicts an average share of 37% renewable electricity but fluctuation between 62% on good summer days and 18% on bad winter days, so at least it&rsquo;s not totally off.</p>
+<p>So long story short, the model&rsquo;s representation for 2020 would be something like:</p>
 <table>
 <thead>
 <tr>
@@ -116,7 +116,7 @@
 </tr>
 </tbody>
 </table>
-<p>This is a very much condensed view, but I don&rsquo;t trust the model too much anyways. In any case, we can now make wild guesses about future developments. Looking at intended increases in solar and wind capacity, I&rsquo;d expect something like 250 W solar and 150 W wind to be added for each year after 2026. Assuming a constant demand of 6 MWh, good days would be 100% renewable in 2030 and average days would be 100% renewable in 2040:</p>
+<p>This is a very much condensed view with really coarse estimates and a lot of secondary parameters hidden, but I don&rsquo;t trust the model too much anyways, so let&rsquo;s not pretend accuracy where there isn&rsquo;t. In any case, we can now make wild guesses about future developments! An optimistic guess would be something like 250 W solar and 100 W wind to be added for each year after 2026 (per person, so ~21 GW solar and ~8 GW wind for the whole of Germany). Assuming a constant demand of 6 MWh, good days would be 100% renewable in 2030 and average days would be 100% renewable in 2040:</p>
 <table>
 <thead>
 <tr>
@@ -149,9 +149,9 @@
 <td>2040</td>
 <td>6 MWh</td>
 <td>4500 W</td>
-<td>2500 W</td>
-<td>96 %</td>
-<td>2.9 MWh</td>
+<td>2000 W</td>
+<td>93 %</td>
+<td>2.4 MWh</td>
 </tr>
 </tbody>
 </table>
@@ -188,13 +188,28 @@
 <td>2040</td>
 <td>12 MWh</td>
 <td>4500 W</td>
-<td>2500 W</td>
-<td>76 %</td>
-<td>1.2 MWh</td>
+<td>2000 W</td>
+<td>72 %</td>
+<td>0.9 MWh</td>
 </tr>
 </tbody>
 </table>
-<p>Of course, none of this is serious, but I&rsquo;m still impressed by how much power we could add. Up to a total of ~70% renewables, the model expects this to work without that much excess energy (renewable energy that ends up unused), 80% renewables are still reasonably reachable but everything above that really pushes you to a lot of energy wasted to get the last few percents together.</p>
+<p>Of course, none of this is serious, but I&rsquo;m still impressed by how much power we could add. Up to a total of ~70% renewables, the model expects this to work without that much excess energy (renewable energy that ends up unused), 80% renewables are still reasonably reachable but everything above that really pushes you towards a lot of power going unused.</p>
+<h2 id="better-batteries">Better Batteries</h2>
+<p>The scenarios above are calculated on a day-by-day basis, so there&rsquo;s still the open point of how to deal with missing solar in the night. Currently there&rsquo;s ~0.5 kWh per person of storage available and I&rsquo;d expect that to get increased to ~1 kWh by 2030 (mostly via lithium-based batteries), so probably that&rsquo;ll just be enough to do some helpfull short-term buffering. Also there will probably be lots of flexible consumption: if there&rsquo;s enough incentive you may be willing to shift charging schedule of your car or heat-up schedule of your heat pump by a few hours. Also there&rsquo;s <a href="https://en.wikipedia.org/wiki/Thermal_energy_storage">thermal storage</a> as a reasonable option to buffer energy for a few hours on a grid scale.</p>
+<p>Still, it would be really really great if we had batteries with 50 €/kWh or lower. There are actually a few candidates to get there, with <a href="https://en.wikipedia.org/wiki/Flow_battery">redox flow batteries</a> my personal bet for how that might actually look like. I don&rsquo;t expect this to arrive on a relevant scale before 2030, but I cannot stress enough how helpful large and cheap storage actually would be.</p>
+<h2 id="happy-hydrogen">Happy Hydrogen</h2>
+<p>(still to be written, but there&rsquo;s a european hydrogen strategy planned that&rsquo;s supposed to actually fill all those blanks the other renewables above couldn&rsquo;t fill)</p>
+<h1 id="part-3-summary">Part 3: Summary</h1>
+<p>(still to be written, just short notes. Don&rsquo;t expect a final version before early 2023, btw.)</p>
+<p>Predictions and/or personal takeaways:</p>
+<ul>
+<li>fluctuations in energy prices will probably be pretty high, but I&rsquo;m unsure how much this will matter for the private person. Still there&rsquo;s probably a pretty large influence in how markets and grids are set up. Infrastructure matters, and regulations do too!</li>
+<li>Solar is nice, but if you really want to make a difference, wind or hydrogen would be way more helpful on the margin</li>
+<li>I&rsquo;d expect the transition to &ldquo;allmost zero carbon&rdquo; to occur until ~2040 and I don&rsquo;t see any practical way how we could accelerate it to 2030, but also no reason why it would have to be 2050 only. (That&rsquo;s a preliminary conclusion before putting everything together and at least nuances might still change)</li>
+<li>I haven&rsquo;t yet tried to estimate how expensive this will be. My current guess is that energy prices will continue to a) wildly fluctuate and b) on average go up for the next years until a new equilibrium is found and they slowly go down again. Also this conclusion might change when I actually run the numbers.</li>
+<li>I&rsquo;d expect us to arrive at some track of ~2°C of global warming and miss the 1.5°C that would be a lot better. Still, 1.8°C would be better than 2.0 which would in turn be better than 2.2. There&rsquo;s a lot of uncertainty and a lot of room for innovation left.</li>
+</ul>
 
 </main>
 
