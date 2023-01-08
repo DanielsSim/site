@@ -33,7 +33,9 @@
 
 <main>
 <p><em>Work in progress. People wanted to read a draft state, so here you go.</em></p>
-<p>I spent two months looking into the general strategy of country-wide decarbonization. My example here is Germany but all calculations are on a per-person level, so converting this to any other country should only be a small effort. My target is to build a baseline mental model of energy supply and CO2 reduction on a country-wide level. Be warned that &ldquo;baseline model&rdquo; is way less than a detailed expert model: the model serves as a robust rough guide to the state of the world, but there are a lot of small details missing.</p>
+<p>I spent two months looking into the general strategy of country-wide decarbonization. My example here is Germany but all calculations are on a per-person level. Converting this to any other country should only be a small effort.</p>
+<p>My target is to build a baseline mental model of energy supply and CO2 reduction on a country-wide level. Be warned that &ldquo;baseline model&rdquo; is way less than a detailed expert model: the model serves as a robust rough guide to the state of the world, but there are a lot of small details missing.</p>
+<p>My summary is that an (allmost) CO2-neutral society is feasible with today&rsquo;s technology and in reach within 20 years or so. The good news is that we are getting there. Also it will be pretty wild and very interesting.</p>
 <h1 id="part-1-base-problems-to-keep-in-mind">Part 1: Base Problems To Keep in Mind</h1>
 <p>Don&rsquo;t have enough problems yet? Here you go.</p>
 <p>(I recommend skimming part 1 and only reading the details if you have enough time. If this feels like a drag to read, consider to jump ahead to part 2 and come back for these later. Really, I&rsquo;m sorry for so much text before we get to the actual model, but I need to introduce them before that.)</p>
@@ -62,7 +64,7 @@
 <li>other medium-term storage: see <a href="https://en.wikipedia.org/wiki/Energy_storage">here</a> for an overview and <a href="https://en.wikipedia.org/wiki/List_of_energy_storage_power_plants">here</a> for a list of large-scale storages. Thermal storage is a thing for a few hours..days and molten salt for a few hours.</li>
 </ul>
 <h2 id="13-a-problem-of-externalities">1.3: A Problem Of Externalities</h2>
-<p>There&rsquo;s a simple rule of thumb that we can usually expect secondary effects to be small, like maybe 10% of the main direct effect of something we observe. That&rsquo;s not zero, but in first approximation we may ignore the secondary effect of something and still get the order of magnitude of something right. But &ldquo;usually&rdquo; is not always. Especially not with energy production - here the base rule of thumb is that secondary effects may be stronger than primary ones. Let&rsquo;s go through a few common options and think about unintended consequences:</p>
+<p>There&rsquo;s a simple rule of thumb that we can usually expect secondary effects to be small, like maybe 10% of the main direct effect of something we observe. That&rsquo;s not zero, but in first approximation we may ignore the secondary effect of something and still get the order of magnitude right. But &ldquo;usually&rdquo; is not always, especially not with energy production: Here the base rule of thumb is that secondary effects may be stronger than primary ones. Let&rsquo;s go through a few common options and think about unintended consequences:</p>
 <ul>
 <li>Coal: baseline price ~<a href="https://en.wikipedia.org/wiki/Economics_of_nuclear_power_plants#/media/File:3-Learning-curves-for-electricity-prices.png">10 ct/kWh electricity</a>; emits lots of CO2 (~<a href="https://ourworldindata.org/explorers/impacts-of-energy-sources">1 T CO2 per MWh</a>, equals 10 ct/kWh at a CO2 price of 100 €/T). Deaths from cancer caused by should add ~25 ct/kWh (based on 10 M€ per life and <a href="https://ourworldindata.org/safest-sources-of-energy">25 deaths per TWh</a>).</li>
 <li>Oil is almost identical to coal except for baseline costs and handling (easier to work with on a small scale, like cars and house heating; not so great for steel production)</li>
@@ -72,12 +74,23 @@
 <li>Solar: These days baseline price of ~10 ct/kWh for new installations on rooftops, ~5 ct/kWh for standalone / large scale installations, I&rsquo;ve heard ~2 ct/kWh for large installations in spain). Power output fluctuates wildly: zero at night, <a href="https://en.wikipedia.org/wiki/Solar_power#/media/File:Seasonal_cycle_of_capacity_factors_for_wind_and_photovoltaics_in_Europe_under_idealized_assumptions.png">factor 3</a> between spring/summer and autumn/winter due to daylight lenght and cloud intensity. Given the fluctuations, you need a significant battery capacity to buffer fluctuations that should increase costs significantly (maybe another 5 ct/kWh).</li>
 </ul>
 <h2 id="14-a-problem-of-perspectives">1.4: A Problem Of Perspectives</h2>
-<p>Curves often look smooth when sufficiently zoomed out, but change may feel very disruptive if you&rsquo;re directly affected. Effects will not apply to everyone the same way - an increase in gas costs doesn&rsquo;t matter at all if you&rsquo;re in a well-insulated house with a heat pump but very much if you&rsquo;re a small-income family in an old house. Timescales will differ on your perspective - sales of new cars may switch to electric vehicles now, but people will still drive old cars with combustion engines in 15 years from now.</p>
-<p>I don&rsquo;t always know how to factor in all of these. At least, I try my best not to forget them.</p>
+<p>Curves often look smooth when sufficiently zoomed out, but change may feel very disruptive if you&rsquo;re directly affected. Effects will not apply to everyone the same way - an increase in gas costs doesn&rsquo;t matter at all if you&rsquo;re in a well-insulated house with a heat pump but very much if you&rsquo;re a small-income family in an old house. Timescales will differ on your perspective.</p>
+<p>Take this example of electric vehicle sales:</p>
+<p><img src="electric_vehicle_model.png" alt=""></p>
+<p>_A simple model on the market transition of electric vehicles I pulled together in 2017. Feel free to compare with <a href="https://en.wikipedia.org/wiki/Electric_car_use_by_country#Statistics">how the market has developed since</a> - so far it&rsquo;s been surprisingly accurate. _</p>
+<p>Assuming the model above is somewhat true, can we appreciate for a moment how different such a transition feels depending on one&rsquo;s perspective?</p>
+<ul>
+<li>If you&rsquo;re doing future developments for cars, it&rsquo;s basically clear where we&rsquo;re headed since 2018 (± 2 years, depending on who you ask).</li>
+<li>If you&rsquo;re actually building new cars, you&rsquo;re starting to see that change now, but it will really hit you in the years until 2030.</li>
+<li>Sales of new cars may switch to electric vehicles now, but people will still drive old cars with combustion engines in 15 years from now. Hey, you might even get one really cheap!</li>
+<li>The model above looks really smooth, but if you&rsquo;re working somewhere in a combustion-engine-dependent industry, that transition will feel really bumpy.</li>
+</ul>
+<p>In the scope of this discussion here, I mostly assume that electrification of very large industries will happen inevitably (including but not limited to cars). In most cases, I have reasonably high confidence that this is what we&rsquo;ll see and that actual implementation details will work out one way or the other and I&rsquo;m wary of debating what kind of battery or charging system will be the core thing in 15 years from now.</p>
+<p>You might disagree and a large share of our disagreement will probably result from different perspectives. I don&rsquo;t always know how to factor in all of these disagreements. At least, I try my best not to forget them.</p>
 <h1 id="part-2-a-baseline-model-of-energy-transition">Part 2: A Baseline Model Of Energy Transition</h1>
 <p>Let&rsquo;s try to put all of this together.</p>
 <h2 id="21-fiddely-fluctuations">2.1: Fiddely Fluctuations</h2>
-<p><a href="https://www.smard.de/en">https://www.smard.de/en</a> has data on hourly energy production. When writing this together I first made lots of screenshots, but then kicked them out for brevity (I encourage you to look at the dataset on your own). Things that really stood out for me:</p>
+<p><a href="https://www.smard.de/en">https://www.smard.de/en</a> has data on hourly energy production in Germany. Things that really stood out for me:</p>
 <ol>
 <li>Renewables now make up a significant part of Germany&rsquo;s electricity production, close to 50%. But they fluctuate wildly! Much of this gets compensated by in- and decreasing coal-powered electricity, but we&rsquo;ve definitely hit a limit of this and in high-supply cases (= more renewables get produced than there&rsquo;s energy demand). Honestly I&rsquo;m surprised our grid can tolerate that much fluctuation, with wind power being mostly in the north.</li>
 </ol>
@@ -91,9 +104,9 @@
 <h2 id="22-renewables-rampup">2.2: Renewables Rampup</h2>
 <p>OK, so forget the storage, what if we just ramp up renewables? Let&rsquo;s just build enough solar and wind and accept that they usually produce more energy than we need!</p>
 <p>Rough estimate: Assuming sufficient buffering is available, we&rsquo;d need another ~5 MWh * 84M people = 420 TWh of renewable generation to hit close to 100% renewable electricity generation. Maybe more like 10 MWh per person if we shift all kinds of stuff to electricity. We plan to add something like 15 TWh of wind and 20 TWh of solar per year from 2025 on, so we&rsquo;ll reach the &ldquo;close to 100%&quot;-point some time after 2030, probably more like 2040.</p>
-<p>Can we do better than this rough estimate? Let&rsquo;s see: I built a simple spreadsheet-based model of energy supply and demand by taking the average over the year and splitting it over the year by defining a summer and winter share and a fluctuation share to distinguish between good and bad days. (Again, all numbers on a per-capita base)</p>
+<p>Can we do better? Let&rsquo;s see: I built a spreadsheet-based model of energy supply and demand by taking average energy production and splitting it over the year by defining a summer and winter share and a fluctuation share to distinguish between good and bad days. (Again, all numbers on a per-capita base)</p>
 <p><img src="simple_model_solar_supply.png" alt="simple_model_solar_supply.png"></p>
-<p>I can do the same with wind (same capacity, but better yield at 2 kwh/W/year + summer/winter shares reversed) and with &ldquo;others&rdquo; (mostly biomass, so no fluctuation) ab a constant 50 W. All numbers are made up and only loosely grounded in reality. For 2020 and against 6 MWh/year base consumption, the model predicts an average share of 37% renewable electricity but fluctuation between 62% on good summer days and 18% on bad winter days, so at least it&rsquo;s not totally off.</p>
+<p>We can do the same with wind (same capacity, but better yield at 2 kwh/W/year + summer/winter shares reversed) and with &ldquo;others&rdquo; (mostly biomass, so no fluctuation) ab a constant 50 W. For 2020 and against 6 MWh/year base consumption, the model predicts an average share of 37% renewable electricity but fluctuation between 62% on good summer days and 18% on bad winter days, so at least it&rsquo;s not totally off.</p>
 <p>So long story short, the model&rsquo;s representation for 2020 would be something like:</p>
 <table>
 <thead>
@@ -154,7 +167,7 @@
 </tr>
 </tbody>
 </table>
-<p>Of course demand will not remain at 6 MWh as we&rsquo;re shifting more stuff towards electricity. Let&rsquo;s make a wild guess here and assume demand will double until 2040, then we&rsquo;d have to cope with 12 MWh per person and year.</p>
+<p>But demand will not remain at 6 MWh as we&rsquo;re shifting more stuff towards electricity. Let&rsquo;s make a wild guess here and assume demand will double until 2040, then we&rsquo;d have to cope with 12 MWh per person and year.</p>
 <table>
 <thead>
 <tr>
@@ -193,29 +206,94 @@
 </tr>
 </tbody>
 </table>
-<p>Of course, none of this is serious, but I&rsquo;m still impressed by how much power we could add. Up to a total of ~70% renewables, the model expects this to work without that much excess energy (renewable energy that ends up unused), 80% renewables are still reasonably reachable but everything above that really pushes you towards a lot of power going unused.</p>
+<p>I&rsquo;m still impressed by how much power we could add. Up to a total of ~70% renewables, the model expects this to work without that much excess energy (renewable energy that ends up unused), 80% renewables are still reasonably reachable but everything above that really pushes you towards a lot of power going unused.</p>
 <h2 id="23-better-batteries">2.3: Better Batteries</h2>
-<p>The scenarios above are calculated on a day-by-day basis, so there&rsquo;s still the open point of how to deal with missing solar in the night. Currently there&rsquo;s ~0.5 kWh per person of storage available and I&rsquo;d expect that to get increased to ~1 kWh by 2030 (mostly via lithium-based batteries), so probably that&rsquo;ll just be enough to do some helpfull short-term buffering. Also there will probably be lots of flexible consumption: if there&rsquo;s enough incentive you may be willing to shift charging schedule of your car or heat-up schedule of your heat pump by a few hours. Also there&rsquo;s <a href="https://en.wikipedia.org/wiki/Thermal_energy_storage">thermal storage</a> as a reasonable option to buffer energy for a few hours on a grid scale.</p>
-<p>Still, it would be really really great if we had batteries with 50 €/kWh or lower. There are actually a few candidates to get there, with <a href="https://en.wikipedia.org/wiki/Flow_battery">redox flow batteries</a> my personal bet for how that might actually look like. I don&rsquo;t expect this to arrive on a relevant scale before 2030, but I cannot stress enough how helpful large and cheap storage actually would be.</p>
+<p>The scenarios above are calculated on a day-by-day basis, so there&rsquo;s still the open point of how to deal with missing solar in the night. Currently there&rsquo;s ~0.5 kWh per person of storage available and I&rsquo;d expect that to get increased to ~1 kWh by 2030 (mostly via lithium-based batteries), so probably that&rsquo;ll just be enough to do some helpfull short-term buffering. Also there will probably be lots of flexible consumption: if there&rsquo;s enough incentive you may be willing to shift the charging schedule of your car or heat-up schedule of your heat pump by a few hours. Also there&rsquo;s <a href="https://en.wikipedia.org/wiki/Thermal_energy_storage">thermal storage</a> as a reasonable option to buffer energy for a few hours on a grid scale.</p>
+<p>Still, it would be really really great if we had batteries at a pricetag of 50 €/kWh or lower. There are actually a few candidates to get there, with <a href="https://en.wikipedia.org/wiki/Flow_battery">redox flow batteries</a> my personal bet for how that might actually look like. I don&rsquo;t expect this to arrive on a relevant scale before 2030, but I cannot stress enough how helpful large and cheap storage actually would be.</p>
 <h2 id="24-happy-hydrogen">2.4: Happy Hydrogen</h2>
 <p>The model in 2.2 suggests that we can …</p>
 <ol>
 <li>Shift most of today&rsquo;s fossile fuel consumption towards electricity (but this will increase electricity demand by something like a factor of 2).</li>
 <li>Build enough solar and wind until 2040 so that ~70% of that electricity will be renewable.</li>
 </ol>
-<p>What about the last 30% and what about difficult-to-electrify technologies like <a href="https://www.theguardian.com/environment/ng-interactive/2021/nov/11/climate-fuel-gasoline-petrol-ships-planes">ships and planes</a> or <a href="https://en.wikipedia.org/wiki/Ammonia_production">ammonia / fertilizers</a>? Turns out that potentially we could do those if we had enough green hydrogen. So green hydrogen production could be something like <a href="https://fcarchitects.org/wp-content/uploads/2022/12/20220902_Factsheet_Hydrogen_English_print_proof.pdf">500 MT worldwide in 2040</a> (versus 73 MT today) and there&rsquo;s a <a href="https://energy.ec.europa.eu/topics/energy-systems-integration/hydrogen/key-actions-eu-hydrogen-strategy_en">european hydrogen strategy</a> that includes a <a href="https://www.ehb.eu/page/european-hydrogen-backbone-maps">hydrogen backbone</a> (<a href="https://www.ehb.eu/page/estimated-investment-cost">transport costs ~15 ct / 1000 km</a>).</p>
-<p>The model in section 2.2 ends with an estimated consumption of 12 MWh electricity per person and year for 2040 and a 70% renewable shares, so there&rsquo;d be something like ~4 MWh missing that hydrogen would have to fill in. That equals 100 kg hydrogen per person and year (at 40 kWh/kg) - or 8.4 MT for germany, 45 MT for the european union (this is missing industrial use and efficiency losses, so feel free to generously round this up by another 50% or something).</p>
+<p>What about the last 30% and what about difficult-to-electrify technologies like <a href="https://www.theguardian.com/environment/ng-interactive/2021/nov/11/climate-fuel-gasoline-petrol-ships-planes">ships and planes</a> or <a href="https://en.wikipedia.org/wiki/Ammonia_production">ammonia / fertilizers</a>? Turns out that potentially we could do those if we had enough green hydrogen. So green hydrogen production could be something like <a href="https://fcarchitects.org/wp-content/uploads/2022/12/20220902_Factsheet_Hydrogen_English_print_proof.pdf">500 MT worldwide in 2040</a> (versus 73 MT today) and there&rsquo;s a <a href="https://energy.ec.europa.eu/topics/energy-systems-integration/hydrogen/key-actions-eu-hydrogen-strategy_en">european hydrogen strategy</a> that includes a <a href="https://www.ehb.eu/page/european-hydrogen-backbone-maps">hydrogen backbone</a> (<a href="https://www.ehb.eu/page/estimated-investment-cost">transport costs ~20 ct / 1000 km and kg of hydrogen</a> - remember 1 kg hydrogen = 34 kWh of stored energy).</p>
+<p>The model in section 2.2 ends with an estimated consumption of 12 MWh electricity per person and year for 2040 and with a 70% renewable shares, so there&rsquo;d be something like ~4 MWh missing that hydrogen would have to fill in. That equals ~120 kg hydrogen per person and year (at 34 kWh/kg, with some losses added on top) - or ~10 MT for germany, ~50 MT for the european union (this is missing industrial use, so feel free to generously round this up by another 50% or something). These 4MWh per person could be created from excess energy in a very local way, but a transport network could utilize pretty large advantages for Mediterranean countries with very cheap solar electricity.</p>
 <p>So hydrogen should be able to fill in for the missing renewables… conditional on us building a hydrogen backbone, having enough electrolysis capacity at places with constant excess renewables and converting all affected processes to hydrogen. Still, it&rsquo;s doable in principle.</p>
 <h1 id="part-3-summary">Part 3: Summary</h1>
-<p>(still to be written, just short notes. Don&rsquo;t expect a final version before early 2023, btw.)</p>
-<p>Predictions and/or personal takeaways:</p>
+<p>Part 2 is mostly a collection of small puzzle pieces and an attempt to assemble them into a coherent model. That model is introduced in section 2.2 and consists of a few assumptions (4th and 5th added afterwards):</p>
+<ol>
+<li>How energy demand might evolve: electricity demand goes up by a factor of 2 while non-electrical demand goes down</li>
+<li>How renewables might evolve: solar and wind will increase by 250W and 100W/year respectively starting 2025, the rest doesn&rsquo;t matter too much</li>
+<li>A very simple excel sheet to calculate how much of the electricity output will thus be carbon-free: batteries don&rsquo;t allow for significant multi-day storage, wind and solar will have difficulty providing &raquo;70% of all electricity demand</li>
+<li>Section 2.4 then introduces green hydrogen as an answer to &ldquo;where do we get the other 30% from&rdquo;. I&rsquo;m making some very wild guesses on availability here, but something like 1MWh per person and year until 2030 and 5 MWh until 2040 seems possible.</li>
+<li>I decided to throw in an ad-hoc estimation of CO2 emissions by (fossile demand = total demand - el. demand * share_renewables - green_hydrogen_used) and (CO2 = fossile_demand * 0.25T/MWh). I don&rsquo;t think this is way worse than any other assumption made along the way, so let&rsquo;s take that as a really rough guide.</li>
+</ol>
+<p>Integrated into the summary table from section 2.2, this would look something like this:</p>
+<table>
+<thead>
+<tr>
+<th>year</th>
+<th>total demand (1)</th>
+<th>el. demand (1)</th>
+<th>capacity solar (2)</th>
+<th>capacity wind (2)</th>
+<th>electricity from wind + solar (3)</th>
+<th>green hydrogen used (4)</th>
+<th>CO2 / year (5)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020</td>
+<td>40 MWh</td>
+<td>6 MWh</td>
+<td>500 W</td>
+<td>500 W</td>
+<td>37 %</td>
+<td>0 MWh</td>
+<td>9.5 T</td>
+</tr>
+<tr>
+<td>2030</td>
+<td>30 MWh</td>
+<td>9 MWh</td>
+<td>2000 W</td>
+<td>1000 W</td>
+<td>56 %</td>
+<td>1 MWh</td>
+<td>6.3 T</td>
+</tr>
+<tr>
+<td>2040</td>
+<td>20 MWh</td>
+<td>12 MWh</td>
+<td>4500 W</td>
+<td>2000 W</td>
+<td>72 %</td>
+<td>5 MWh</td>
+<td>1.6 T</td>
+</tr>
+</tbody>
+</table>
+<p>So long story short, this is my best understanding of how the transition from ~10 T CO2 per person and year down to &lt;2 T per year could look like for Germany. As far as I can tell, assumptions 1-5 are compatible with all the constraints I put on the table in part 1 and with the current policy of Germany and the EU (more on other countries below).</p>
+<h2 id="consequences-and-confidences">Consequences And Confidences</h2>
+<p>How confident am I that my model is correct? Well, no model is ever true, but that&rsquo;s besides the point.</p>
+<p>I am pretty confident that the picture I paint here is roughly correct for Germany for the next 10 years. I&rsquo;d expect CO2 emissions to decrease towards 2030 but I don&rsquo;t think there&rsquo;s a very good way how Germany could reduce them by more than 50% in such a short timespan without severe consequences (like a very strong deindustrialization). I am also somewhat confident that Germany will reach a &lt;2 T CO2 per person somewhat around 2040 (± 5 years), but other technologies than solar, wind and hydrogen might play a role (see next section). All of this is assuming no weird wildcard occurs (3rd world war, general artificial intelligence destroying the world, whatever).</p>
+<p>I am way less confident that this is exactly how it&rsquo;ll play out in other countries. One reason for this is that Germany decided to ditch nuclear energy, so I don&rsquo;t have to factor that into my model here (I don&rsquo;t have a strong personal opinion on that one, I&rsquo;d just be REALLY surprised if that decision got reversed in the current political climate). Also there are a few other technologies we could see in 10..15 years that might play a large role for other countries. Let&rsquo;s tackle them in the next section.</p>
+<p>So one really nice consequence is that this looks better than I thought. I come away from this believeing that we can decarbonize a very large industrial country (and ideally the whole world) without loosing much of the comfort luxuries we&rsquo;ve gotten so accustomed to. I also come away from this believing that the energy supply in Germany in 20 years from now will be a lot weirder and different from what is there today than most of us expect it to.</p>
+<p>That weirdness results a large part in accepting the very-much-fluctuating nature of solar and wind. This is a good week in early summer 2022:</p>
+<p><img src="fluctuation_june2022.png" alt="">
+<img src="fluctuation_legend.png" alt="">
+(May 30th to June 6th 2022 in the <a href="https://www.smard.de/en/marktdaten?marketDataAttributes=%7B%22resolution%22:%22hour%22,%22from%22:1665808917927,%22to%22:1666759317926,%22moduleIds%22:%5B1004066,1001226,1001225,1004067,1004068,1001228,1001224,1001223,1004069,1004071,1004070,1001227,5000410%5D,%22selectedCategory%22:null,%22activeChart%22:true,%22style%22:%22color%22,%22categoriesModuleOrder%22:%7B%7D,%22region%22:%22DE%22%7D">SMARD data viewer</a>. Again, the red curve is demand).</p>
+<p>So what will happen if we scale solar by a factor of 4? Surely, demand will also grow, but these are the cases of excess energy being available the model refered to. So at least if you run your own solar, there will be cases of &ldquo;if you don&rsquo;t want to use the electricity right now, noone else will&rdquo; where the market price for electricity is close to zero.</p>
+<p>There should be a pretty high incentive to build something like smart demand structures that use those &ldquo;almost free&rdquo; electricity peaks and avoid high cost-situations. There are probably some smart and some not-so-smart solutions of how to bring market mechanisms into play here, but I&rsquo;m pretty sure there will be at least some incentive structure in place. My current position is that I&rsquo;d really like to see a &ldquo;you pay minute-by-minute the current price&rdquo;-option implemented, at least to find out how well that&rsquo;ll work.</p>
+<p>Also based on all of this, I find it really difficult to predict how expensive power will be in the medium term. Today&rsquo;s electricity costs are largely not actual production costs but costs imposed on all consumers to pay for common goods like a robust grid. We&rsquo;ll probably need a stronger grid and more buffering in the future and actual prices will very much depend on how those costs are redistributed to all consumers. At the very least, I&rsquo;d expect prices to go down somewhat in the future and be capped by something like &ldquo;we can always build very local hydrogen-to-power plants once enough hydrogen is available&rdquo;.</p>
 <ul>
-<li>fluctuations in energy prices will probably be pretty high, but I&rsquo;m unsure how much this will matter for the private person. Still there&rsquo;s probably a pretty large influence in how markets and grids are set up. Infrastructure matters, and regulations do too!</li>
 <li>Solar is nice, but if you really want to make a difference, wind or hydrogen would be way more helpful on the margin</li>
-<li>I&rsquo;d expect the transition to &ldquo;allmost zero carbon&rdquo; to occur until ~2040 and I don&rsquo;t see any practical way how we could accelerate it to 2030, but also no reason why it would have to be 2050 only. (That&rsquo;s a preliminary conclusion before putting everything together and at least nuances might still change)</li>
-<li>I haven&rsquo;t yet tried to estimate how expensive this will be. My current guess is that energy prices will continue to a) wildly fluctuate and b) on average go up for the next years until a new equilibrium is found and they slowly go down again. Also this conclusion might change when I actually run the numbers.</li>
 <li>I&rsquo;d expect us to arrive at some track of ~2°C of global warming and miss the 1.5°C that would be a lot better. Still, 1.8°C would be better than 2.0 which would in turn be better than 2.2. There&rsquo;s a lot of uncertainty and a lot of room for innovation left.</li>
 </ul>
+<h2 id="alternatives">Alternatives</h2>
+<p>So enough with Germany, what about the rest of the world?</p>
 
 </main>
 
